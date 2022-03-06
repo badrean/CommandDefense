@@ -1,0 +1,4 @@
+Adrian 1000
+Boss 2500
+Dragos 1100
+Calamar 900

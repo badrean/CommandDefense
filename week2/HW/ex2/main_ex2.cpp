@@ -1,4 +1,5 @@
 #include <iostream>
+#include "GlobalWave.h"
 
 /*
 	Design a C++ class that reflects the properties of an wave of  enemies. The class should include the following:
@@ -14,14 +15,28 @@ If two waves are equal the return value of such a function will be 0. If the fir
 a cpp file for the methods specific to the class
 a header file for the global functions
 a cpp file for the global functions implementation
-a main.cpp file that shows how the methods and global functions can be used.
+- a main.cpp file that shows how the methods and global functions can be used.
 
 */
 
-
 int main()
 {
+	Wave* ptrWave = new Wave[2];
 
+	ptrWave[0].set_nrofEnemies(9);
+	ptrWave[0].set_startingHealth(10);
+	ptrWave[0].set_moneyperEnemy(2.5f);
+
+	ptrWave[1].set_nrofEnemies(10);
+	ptrWave[1].set_startingHealth(10);
+	ptrWave[1].set_moneyperEnemy(1.5f);
+
+	int x = compareEnemiesNumber(&ptrWave[0], &ptrWave[1]);
+	int y = compareMoney(&ptrWave[0], &ptrWave[1]);
+
+	printf("x = %d si y = %d", x, y);
+
+	delete[] ptrWave;
 
     return 0;
 }
