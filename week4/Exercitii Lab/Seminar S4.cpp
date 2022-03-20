@@ -28,11 +28,11 @@ int main(int argc, char* argv[])
 
     MyLibrary l5 = { cout, 10,1,2,3,4,5,6,7,8,9,10 };
     l5.print_books();//Ar trebui sa printeaze "Found 10 books"
-
+    std::cout << "STOP" << std::endl;
     //La final decomantati functiile si implementati -- nu aveti voie sa modificati liniile de mai jos (doar sa le decomentati)
-    //const MyLibrary& l = l5;
-    //cout << "Found book number: " << l.get_books_count() << endl;
-    //cout << "Found book id: " << l.get_book_index_by_id(3) << endl;
-    //cout << "Found book id: " << l.get_book_index_by_id(10) << endl;
+    const MyLibrary& l = l5;
+    cout << "Found book number: " << l.get_books_count() << endl;
+    cout << "Found book id: " << l.get_book_index_by_id(3) << endl;
+    cout << "Found book id: " << l.get_book_index_by_id(10) << endl;
     return 0;
 }

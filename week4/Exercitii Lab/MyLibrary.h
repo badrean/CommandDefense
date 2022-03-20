@@ -40,7 +40,7 @@ public:
     //nu aveti voie sa modifcati aceasta functie
     void update_books_id_by_index(int book_index, int book_id);
 
-    int get_books_count();
+    int get_books_count() const;
 
-    int get_book_index_by_id(int id);
+    int get_book_index_by_id(int id) const;
 };

@@ -112,13 +112,14 @@ void MyLibrary::update_books_id_by_index(int book_index, int book_id)
         this->books[book_index] = book_id;
 }
 
-int MyLibrary::get_books_count()
+int MyLibrary::get_books_count() const
 {
-    if (this->books_number > 0) return books_number;
+    if (books_number > 0) return books_number;
     return -1;
 }
 
-int MyLibrary::get_book_index_by_id(int id)
+
+int MyLibrary::get_book_index_by_id(int id) const
 {
     if (books_number <= id) return -1; 
     return books[id];
