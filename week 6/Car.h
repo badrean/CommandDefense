@@ -10,11 +10,11 @@ protected:
 	int average_speed;
 	
 public:
-	int avg_time;
+	float avg_time;
 	const char* name;
 	virtual int GetFuelCap() const = 0;
 	virtual int GetFuelConsum() const = 0;
-	virtual int GetAverageSpeed() const = 0;
+	virtual float GetAverageSpeed() const = 0;
 
 
 };

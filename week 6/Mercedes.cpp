@@ -31,7 +31,7 @@ int Mercedes::GetFuelConsum() const
     return fuel_consumption_km;
 }
 
-int Mercedes::GetAverageSpeed() const
+float Mercedes::GetAverageSpeed() const
 {
     return average_speed;
 }

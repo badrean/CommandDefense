@@ -9,6 +9,7 @@ class Circuit
 	int count; int max_count;
 	Weather curr_weather;
 	Car* cars[3];
+	int top[3] = { 0, 1, 2 };
 public:
 	Circuit()
 	{

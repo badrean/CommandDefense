@@ -8,6 +8,6 @@ public:
 	Dacia(int fuel_cap, int fuel_consum, Weather condition);
 	int GetFuelCap() const;
 	int GetFuelConsum() const;
-	int GetAverageSpeed() const;
+	float GetAverageSpeed() const;
 };
 

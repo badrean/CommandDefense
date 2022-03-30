@@ -31,7 +31,7 @@ int Dacia::GetFuelConsum() const
     return fuel_consumption_km;
 }
 
-int Dacia::GetAverageSpeed() const
+float Dacia::GetAverageSpeed() const
 {
     return average_speed;
 }

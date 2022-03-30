@@ -32,7 +32,7 @@ int Toyota::GetFuelConsum() const
     return fuel_consumption_km;
 }
 
-int Toyota::GetAverageSpeed() const
+float Toyota::GetAverageSpeed() const
 {
     return average_speed;
 }
