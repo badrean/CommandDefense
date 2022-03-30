@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #pragma once
-#include "Circuit.h"
 #include "Weather.h"
+#include <string.h>
 
 class Car
 {

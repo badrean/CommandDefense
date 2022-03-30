@@ -27,7 +27,6 @@ void Circuit::Race()
 	{
 		cars[i]->avg_time = lenght / cars[i]->GetAverageSpeed();
 	}
-
 }
 
 Weather Circuit::GetWeather()

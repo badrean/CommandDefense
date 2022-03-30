@@ -6,11 +6,15 @@
 class Circuit
 {
 	int lenght;
-	int count = 0; int max_count = 3;
+	int count; int max_count;
 	Weather curr_weather;
-	
-public:
 	Car* cars[3];
+public:
+	Circuit()
+	{
+		count = 0;
+		max_count = 3;
+	}
 	bool AddCar(Car* masina);
 	void SetWeather(Weather conditie_meteo);
 	void SetLength(int distanta);
